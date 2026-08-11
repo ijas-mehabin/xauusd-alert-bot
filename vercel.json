@@ -1,8 +1,7 @@
 {
-  "rewrites": [
-    {
-      "source": "/api/cron",
-      "destination": "/api/cron.py"
+  "functions": {
+    "api/cron.py": {
+      "runtime": "python3.12"
     }
-  ]
+  }
 }
