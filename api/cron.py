@@ -10,8 +10,8 @@ from upstash_redis import Redis
 TWELVEDATA_API_KEY = os.environ.get("TWELVEDATA_API_KEY")
 TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
-UPSTASH_REDIS_REST_URL = os.environ.get("UPSTASH_REDIS_REST_URL")
-UPSTASH_REDIS_REST_TOKEN = os.environ.get("UPSTASH_REDIS_REST_TOKEN")
+KV_REST_API_URL = os.environ.get("UPSTASH_REDIS_REST_URL")
+KV_REST_API_TOKEN = os.environ.get("UPSTASH_REDIS_REST_TOKEN")
 
 # Initialize Redis Client
 redis = Redis(url=UPSTASH_REDIS_REST_URL, token=UPSTASH_REDIS_REST_TOKEN) if UPSTASH_REDIS_REST_URL else None
