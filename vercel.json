@@ -1,7 +1,8 @@
 {
-  "functions": {
-    "api/cron.py": {
-      "runtime": "python3.12"
+  "crons": [
+    {
+      "path": "/api/cron",
+      "schedule": "*/15 * * * *"
     }
-  }
+  ]
 }
